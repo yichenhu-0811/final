@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -422,4 +423,67 @@ footer .social-links a:hover {
     /* Adjust this to your desired larger font size */
     font-size: 1.25rem;
   }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .navbar {
+  background-color: #1c1c1c;
+}
+
+.dark-mode .navbar .nav-links a {
+  color: #e0e0e0;
+}
+
+.dark-mode .navbar .nav-links a:hover {
+  background: rgba(106, 255, 113, 0.5); /* Highlight color */
+}
+.dark-mode .navbar .logo a {
+  color: rgb(53, 244, 0);
+
+}
+
+.dark-mode footer {
+  background: #1c1c1c;
+  color: #bdbdbd;
+}
+
+
+.dark-mode .project-card {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .project-card .btn {
+  background-color: #009a08;
+  color: #000000;
+}
+
+.dark-mode .project-card .btn:hover {
+  background-color: #2e7d32;
+}
+.dark-mode .project-card p{
+  color:#fff;
+}
+.dark-mode .resume-link {
+  color: #81c784;
+}
+
+.dark-mode .resume-link:hover {
+  color: #43a047;
+}
+
+.dark-mode .intro {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+}
+
+.dark-mode .intro h1,
+.dark-mode .intro p {
+  background-color: rgba(0, 0, 0, 0.5);
 }
