@@ -1,0 +1,431 @@
+/* 通用样式 */
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+    background-color: black;
+    color: white;
+  } */
+  
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 1512px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  /* 背景 */
+  /* .full-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  } */
+  
+.toolkit-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Grid Layout */
+.toolkit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns: text and image */
+  align-items: center; /* Center-align items vertically */
+  gap: 40px; 
+  max-width: 1200px; 
+  width: 100%;
+}
+
+/* Text Content Area */
+.toolkit-text-content {
+  display: flex;
+  flex-direction: column; /* Stack text elements vertically */
+  gap: 20px; 
+}
+
+.toolkit-title {
+  font-size: 96px; /* Responsive font size */
+  font-weight: 900;
+  line-height: 1.2;
+  color: #8CA2D9;
+  text-align: left; 
+}
+
+.toolkit-description {
+  font-size: 24px; /* Description text size */
+  font-weight: 700;
+  line-height: 1.5;
+  color: #FF9540;
+  text-align: left; 
+}
+
+.toolkit-subtitle {
+  font-size: 20px; /* Subtitle font size */
+  font-weight: 600;
+  color: #8CA2D9;
+  text-align: left; /* Align text to the left */
+}
+
+/* Image Styling */
+.toolkit-image img {
+  width: 100%; 
+  height: auto; 
+  transform: rotate(7deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .toolkit-grid {
+    grid-template-columns: 1fr; /* Stack text and image vertically */
+    gap: 20px; /* Adjust gap for smaller screens */
+  }
+
+  .toolkit-title,
+  .toolkit-description,
+  .toolkit-subtitle {
+    text-align: center; /* Center-align text for smaller screens */
+  }
+
+  .toolkit-image img {
+    transform: rotate(0deg); /* Remove rotation for small screens */
+  }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .toolkit-grid {
+    grid-template-columns: 1fr; /* Stack items vertically */
+    gap: 15px; /* Smaller gap for compact layout */
+  }
+
+  .toolkit-title,
+  .toolkit-description,
+  .toolkit-subtitle {
+    text-align: center; /* Center-align text for better layout */
+  }
+
+  .toolkit-image img {
+    transform: rotate(0deg);
+    max-width: 200px;
+  }
+}
+
+
+  /* Section 通用样式 */
+  .section {
+    padding: 40px 20px;
+  }
+  
+  .section-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-title-bar {
+    width: 200px;
+    height: 8px;
+    background: #FF9540;
+    margin-right: 10px;
+  }
+  
+  .section-title-text {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1;
+    color: #8CA2D9;
+  }
+  
+  /* Introduction Section */
+  .intro-text {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 40px;
+  }
+  
+  .images-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .rotated-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .rotated-image {
+    width: 250px;
+    height: auto;
+    margin: 10px;
+  }
+  
+  .rotated-image-1 {
+    transform: rotate(15deg);
+  }
+  
+  .rotated-image-2 {
+    transform: rotate(-4deg);
+  }
+  
+  .rotated-image-3 {
+    transform: rotate(8deg);
+  }
+  
+  .rotated-image-4 {
+    transform: rotate(-7deg);
+  }
+  
+  /* Question Section */
+.question-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px; 
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+/* Text Content Area */
+.question-text-content {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+  margin: 40px;
+}
+
+.question-highlight {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1;
+  color:black; 
+}
+
+.question-main {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #FF9540; 
+}
+
+.question-description {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #444; 
+}
+
+
+
+  
+  
+  /* Explore Section */
+  .explore-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .explore-text {
+    flex: 1 1 600px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 20px;
+  }
+  
+  .explore-points {
+    flex: 1 1 400px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FF9540;
+    margin: 20px;
+  }
+  
+  .explore-map-container {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .explore-map {
+    width: 100%;
+    max-width: 1247px;
+    border-radius: 20px;
+    background: #3B3B3B;
+  }
+  
+  /* Solution Section */
+  
+.section {
+  padding: 40px 20px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-title-text {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1;
+  color: #8CA2D9;
+}
+
+/* Grid Layout */
+.solution-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  margin: 20;
+}
+
+/* Text Content */
+.solution-text {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #444; /* Slightly darker text color */
+}
+
+/* Image Gallery */
+.solution-images-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; /* Space between images */
+  justify-content: center; /* Center the images */
+  align-content: space-around;
+}
+
+.solution-image {
+  width: 100%; /* Make images responsive */
+  max-width: 600px;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  background: #3B3B3B; /* Background color for placeholder */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for images */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .solution-grid {
+    grid-template-columns: 1fr; /* Stack text and images vertically */
+    gap: 20px; /* Adjust gap for smaller screens */
+  }
+}
+  
+  /* Delivery Section */
+  .delivery-content {
+    display: grid;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .delivery-text {
+    flex: 1 1 600px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 20px;
+  }
+  
+  .delivery-link {
+    flex: 1 1 600px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .delivery-link a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FD8B5A;
+    text-decoration: underline;
+  }
+
+  .delivery-images-container {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .delivery-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+  }
+
+  /* Footer Text */
+  .footer-text {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    color: #FD8B5A;
+    margin: 40px 0;
+  }
+  
+  /* Group Members */
+  .group-members {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #A1A1A1;
+    margin-bottom: 20px;
+  }
+
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    .project-title {
+      font-size: 28px;
+    }
+  
+    .toolkit-title-text {
+      font-size: 64px;
+    }
+  
+    .question-highlight,
+    .question-main {
+      font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-title {
+      font-size: 24px;
+    }
+  
+    .toolkit-title-text {
+      font-size: 48px;
+    }
+  
+    .question-highlight,
+    .question-main {
+      font-size: 24px;
+    }
+  
+    .toolkit-description,
+    .intro-text,
+    .question-description,
+    .explore-text,
+    .explore-points,
+    .solution-text,
+    .delivery-text {
+      font-size: 18px;
+    }
+  
+    .section-title-text {
+      font-size: 24px;
+    }
+  
+    .footer-text {
+      font-size: 24px;
+    }
+  }
