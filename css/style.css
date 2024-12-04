@@ -117,7 +117,7 @@ body {
 }
 
 .text-content .highlighted {
-    color: limegreen;
+    color: rgb(27, 111, 27);
     text-transform: uppercase;
 }
 
@@ -128,7 +128,7 @@ body {
 }
 
 .text-content .highlight {
-    color: rgb(27, 11, 27);
+    color: rgb(27, 111, 27);
     font-weight: bold;
 }
 
